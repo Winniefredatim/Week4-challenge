@@ -2,15 +2,15 @@ from setuptools import setup
 
 
 setup(
-    name = "Favourite news headlines",
+    name = "Andela challenges-cli",
     version= "1.0",
-    py_modules=["Welcome"],
+    py_modules=["hello"],
     install_requires=[
-        "Click",
+        "Click", "requests"
     ],
-    entry_points="""
-         [console_scripts]
-    """
-
-)
+    entry_points= {
+         "console_scripts": [
+         Helloworld=Helloworld._main_:main
+         ]
+    })
     
